@@ -10,13 +10,14 @@ Person.prototype.greet = function() {
 };
 
 // Employee constructor function that inherits from Person
-function Employee(name, age, jobTitle) {
-  // Call the Person constructor function with this set to the Employee instance
-  Person.call(this, name, age);
-  this.jobTitle = jobTitle;
+class Employee extends Person {
+  constructor(name, age, jobTitle) {
+    super(name, age);
+    this.jobTitle = jobTitle;
+  }
 }
 
-// Inheritance: Set the Employee's prototype property to a new object with the Person's properties
+ // Inheritance: Set the Employee's prototype property to a new object with the Person's properties
 Employee.prototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Employee;
 

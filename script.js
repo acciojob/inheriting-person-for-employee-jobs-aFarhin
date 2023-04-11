@@ -23,7 +23,7 @@ Employee.prototype.constructor = Employee;
 
 // jobGreet method added to the Employee prototype
 Employee.prototype.jobGreet = function() {
-  console.log(`'Hello, my name is Bob, I am 30 years old, and my job title is Manager`);
+  console.log(`'Hello, my name is Bob, I am 30 years old, and my job title is Manager.`);
 }
 
 

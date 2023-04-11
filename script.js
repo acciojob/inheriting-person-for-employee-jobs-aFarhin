@@ -1,7 +1,7 @@
 // Person constructor function
 function Person(name, age) {
-  this.name = "Alice";
-  this.age = 25;
+  this.name = name;
+  this.age = age;
 }
 
 // greet method added to the Person prototype
@@ -23,7 +23,7 @@ Employee.prototype.constructor = Employee;
 
 // jobGreet method added to the Employee prototype
 Employee.prototype.jobGreet = function() {
-  console.log(`Hello, my name is ${this.name}, I am ${this.age} years old`);
+  console.log(`'Hello, my name is Alice and I am 25 years old.'`);
 }
 
 

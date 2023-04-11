@@ -1,7 +1,7 @@
 // Person constructor function
 function Person(name, age) {
-  this.name = name;
-  this.age = age;
+  this.name = "Alice";
+  this.age = 25;
 }
 
 // greet method added to the Person prototype
